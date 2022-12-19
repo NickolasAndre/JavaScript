@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+    font-family: cursive;
+    
+}
+
+
+body, html{
+    background-color: aquamarine;
+}
+
+.box{
+    background-image: linear-gradient(rgba(184, 31, 31, 0.582), rgba(48, 48, 153, 0.411));
+    border-radius: 10px;
+    height: 240px;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1{
+   padding-top: 50px; 
+}
+
+p{
+
+    margin-top: 10px;
+    text-align: justify;
+}
