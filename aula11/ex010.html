@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocidade</title>
+</head>
+<body>
+    <h1>Multas</h1>
+    velocidade do carro
+    <input type="number" name="vel" id="vel">Km/h
+    <input type="button" value="Enviar" onclick="calcular()">
+    <div id="res">
+        Velocidade
+    </div>
+
+    <script>
+        
+        function calcular(){
+            var tvel = window.document.getElementById('vel')
+            var res = window.document.querySelector('div#res')
+            var velkm = Number(tvel.value)
+            res.innerHTML = `Sua velocidade é ${velkm} Km/h`
+            if(velkm > 40){
+                res.innerHTML += `, Velocidade alta`
+            }
+            res.innerHTML += `<p>Dirigar sempre com o cinto</p>`
+        }
+    </script>
+</body>
+</html>

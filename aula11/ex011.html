@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Brasileiro ou Estrangeiro</h1>
+    Qual país você nasceu? 
+    <input type="text" name="txt" id="txt">
+    <input type="button" value="enviar" onclick="lugar()">
+    <div id="res">
+        lugar
+    </div>
+
+    <script>
+        function lugar(){
+            var p = window.document.getElementById('txt')
+            var res = window.document.querySelector('div#res')
+            var po = String(p.value)
+            if(po == 'Brasil'){
+                res.innerHTML = 'brasileiro'
+            }else{
+                res.innerHTML = 'estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
